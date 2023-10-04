@@ -1,4 +1,3 @@
-import random
 from Gear import HP_Buff, MP_Buff, Speed_Buff, Phys_Def_Buff, Mag_Def_Buff, Phys_Att_Buff, Mag_Att_Buff
 
 #Create the stats and how they relate
@@ -33,7 +32,7 @@ class Stats ():
         self.EXP == 0
         self.Max_EXP = int(self.Max_EXP *1.3)
         self.Stat_Points == 3
-        if self.level % 2 == 0:
+        if self.level % 3 == 0:
             self.Skill_Points += 1
 
     def Gain_EXP(self, EXP_Points):
