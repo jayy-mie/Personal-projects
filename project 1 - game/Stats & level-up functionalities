@@ -1,8 +1,8 @@
 import random
-from Gear_and_weapons. import *
+from Gear import HP_Buff, MP_Buff, Speed_Buff, Phys_Def_Buff, Mag_Def_Buff, Phys_Att_Buff, Mag_Att_Buff
 
 #Create the stats and how they relate
-class Stats:
+class Stats ():
     def __init__(self,Level,HP,MP,BP,Vitality,Strength,Reflexes,Intelligence,Accuracy,Speed,Physical_defense,Magical_defense,Physical_attack,Magical_attack,EXP,Max_EXP):
         self.level = Level
         base_HP = 50
@@ -27,4 +27,6 @@ class Stats:
         self.Magical_attack = base_magical_attack + Intelligence + Mag_Att_Buff
         self.EXP = EXP
         self.Max_EXP = Max_EXP
+
+
 

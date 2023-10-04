@@ -1,3 +1,0 @@
-class gear_buffs:
-    def __init__(self,HP_Buff,MP_Buff,Phys_Att_Buff,Mag_Att_Buff,Phys_Def_Buff,Mag_Def_Buff,Speed_Buff,Accu_Buff):
-        self.HP_Buff = HP_Buff
