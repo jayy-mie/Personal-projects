@@ -2,7 +2,6 @@ Project 1: game
 Language: Python
 Goal: to create a functional immersive game,at the same time learning the python language
 type of game: fantasy, turn based
-Duration: from Thursday 28/9/2023 to Thursday 30/10/2023
 
 NB//The game does not have any plot, just the functionalities that i would want in a game
 STEPS:
