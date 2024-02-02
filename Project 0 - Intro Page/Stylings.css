@@ -84,19 +84,41 @@ body {
     .intro{
         padding: 20px;
     }
+    .project_1, .contacts{
+        padding: 20px;
+    }
 }
-footer{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: linear-gradient(45deg, #4CAF50, #2196F3, #9C27B0);
-    background-size: 200% 200%;
-    animation: gradientAnimation 10s ease infinite;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    transition: background-color 0.3s ease; 
+.project_1{
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 20px;
+}
+.project_1 h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.project_1 p{
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.contacts{
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contacts h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.contacts p{
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
