@@ -85,3 +85,18 @@ body {
         padding: 20px;
     }
 }
+footer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: linear-gradient(45deg, #4CAF50, #2196F3, #9C27B0);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: background-color 0.3s ease; 
+}
