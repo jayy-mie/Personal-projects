@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-body {margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-      background: rgb(52, 51, 50);
-      background-size: 200% 200%;
-      height: 100%;
-      color: #ffffff;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: rgb(52, 51, 50);
+    background-size: 200% 200%;
+    height: 100%;
+    color: #ffffff;
 }
-@keyframes gradientAnimation {0% {background-position: 0% 50%;
-}50% {background-position: 100% 50%;
-}100% {background-position: 0% 50%;
-}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 .header {
     position: fixed;
@@ -22,18 +23,59 @@ body {margin: 0;
     background: linear-gradient(45deg, #4CAF50, #2196F3, #9C27B0);
     background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: background-color 0.3s ease; 
 }
-.Home, .Projects{
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
+.navbar a {
+    font-size: 18px;
     font-weight: 700;
-    margin-left: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    transition: color 0.3s ease; 
 }
-p.navbar:hover{
-    background: var(--color);
-    color: #fff;
-} 
+.navbar a:hover {
+    color: rgb(52, 51, 50);
+}
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.intro {
+    margin-top: 120px; 
+    padding: 40px;
+    text-align: center;
+}
+.intro h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar p{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+@media(max-width:768px){
+    .header{
+        padding: 20px 5%;
+    }
+}
